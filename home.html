@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width",initial-scale="1.0">
+        <title>HOME</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">PROFILE</a></li>
+                        <li><a href="">SETTINGS</a></li>
+                        <li><a href="">LOGOUT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>Travel Companion</h1><br><br>
+            <a href="Links/locate.html" class="T-btn">Locate</a>
+        </div>    
+        </section>
+
+        <section class="options">
+            <h1>Welcome!</h1>
+
+            <div class="row">
+                <div class="options-col">
+                    <a href="Links/bookaride.html" class="options-button">Book a Ride</a>
+
+                </div>
+
+                <div class="options-col">
+                    <a href="Links/share.html" class="options-button">Share your Ride</a>
+                </div>
+                <br>
+
+                <div class="options-col">
+                    <a href="Links/rentals.html" class="options-button">Rentals</a>
+                </div>
+
+                <div class="options-col">
+                    <a href="Links/myVehicle.html" class="options-button">Your Vehicle</a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            var navLinks=document.getElementById("navLinks");
+             function showMenu(){
+                navLinks.style.right="0";
+             }
+             function hideMenu(){
+                navLinks.style.right="-200px";
+             }
+
+        </script>
+    </body>
+</html>
